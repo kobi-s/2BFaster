@@ -1,0 +1,26 @@
+{
+  "name": "2BFaster",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Bulk Hour Reporter",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://2bhr.matrix.co.il/projreps/*"
+      ],
+      "js": [
+        "runtime.js",
+        "polyfills.js",
+        "main.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ]
+}
